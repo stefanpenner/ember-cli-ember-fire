@@ -1,10 +1,8 @@
 var sum = Ember.computed.sum;
-var map = Ember.computed.map;
+var mapBy = Ember.computed.mapBy;
 
 export default Ember.ArrayController.extend({
-  scores: map('@this.@each.score', function(people) {
-    return people.get('score');
-  }),
+  scores: mapBy('@this', 'score'),
   total: sum('scores'),
   actions: {
     givePoints: function(model, points) {
