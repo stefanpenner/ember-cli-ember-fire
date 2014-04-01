@@ -1,12 +1,17 @@
-<ul>
-{{#each}}
-  <li>
-    {{name}} - {{score}}
-    <button {{action 'givePoints' this 5}}> Given 5 Points </button>
-    <button {{action 'takePoints' this 5}}> take 5 Points </button>
-    <button {{action 'destroyUser' this}}> Destroy</button>
-  </li>
-{{/each}}
-</ul>
+<div class="leaderboard">
+  {{#each}}
+    <div {{bindAttr class=":player selected"}} {{action 'selectPlayer' this}}>
+      <span class="name">{{name}}</span>
+      <span class="score">{{score}}</span>
+    </div>
+    </li>
+  {{/each}}
+  </ul>
+</div>
 <h1>total: {{total}}</h1>
+<div class="details">
+{{#if selectedPlayer}}
+  {{render 'player/edit' selectedPlayer}}
+{{/if}}
 {{render 'player/new'}}
+</div>
