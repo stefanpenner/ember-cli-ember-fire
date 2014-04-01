@@ -1,19 +1,11 @@
-module.exports = function(environment) {
-  var ENV = {
-    rootURL: '/',
-    FEATURES: {
-      // Here you can enable experimental featuers on an ember canary build
-      // e.g. 'with-controller': true
-    }
-  };
+// Put general configuration here. This file is included
+// in both production and development BEFORE Ember is
+// loaded.
+//
+// For example to enable a feature on a canary build you
+// might do:
+//
+// window.ENV.FEATURES['with-controller'] = true;
 
-  if (environment === 'development') {
-
-  }
-
-  if (environment === 'production') {
-
-  }
-
-  return JSON.stringify(ENV); // Set in index.html
-};
+window.ENV = window.ENV || {};
+window.ENV.FEATURES = window.ENV.FEATURES || {};

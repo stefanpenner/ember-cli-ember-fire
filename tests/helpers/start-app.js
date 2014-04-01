@@ -1,5 +1,5 @@
-import Application from 'foo/app';
-import Router from 'foo/router';
+import Application from 'ember-cli-ember-fire/app';
+import Router from 'ember-cli-ember-fire/router';
 
 function startApp(attrs) {
   var App;
