@@ -11,9 +11,6 @@
     "ic-ajax": "~0.3.0",
     "ember-testing-httpRespond": "~0.1.2",
     "loader": "git://github.com/stefanpenner/loader.js#1.0.0",
-    "emberfire": "git://github.com/firebase/emberFire#run-loop-fixes"
-  },
-  "resolutions": {
-    "ember": "1.5.0"
+    "emberfire": "~1.0.3"
   }
 }
