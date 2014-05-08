@@ -1,6 +1,5 @@
 {
   "name": "ember-cli-ember-fire",
-  "APIMethod": "stub",
   "version": "0.0.0",
   "private": true,
   "directories": {
@@ -12,22 +11,16 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/stefanpenner/ember-cli.git"
+  "repository": "https://github.com/stefanpenner/ember-cli",
+  "engines": {
+    "node": ">= 0.10.0"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "ember-cli" : "^0.0.20",
-    "loom-generators-ember-appkit": "~1.0.5",
-    "originate": "~0.1.5",
-    "loom": "~3.1.2",
-    "broccoli-es6-concatenator": "0.1.2",
-    "broccoli": "0.5.0",
-    "broccoli-static-compiler": "0.1.2",
-    "broccoli-template": "0.1.0",
-    "broccoli-uglify-js": "0.1.1",
-    "broccoli-env": "0.0.1"
+    "ember-cli": "0.0.27",
+    "originate": "0.1.5",
+    "broccoli-ember-hbs-template-compiler": "^1.5.0",
+    "loom-generators-ember-appkit": "^1.1.1"
   }
 }

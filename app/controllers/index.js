@@ -14,11 +14,11 @@ export default Ember.ArrayController.extend({
       this.set('selectedPlayer', player);
     },
     givePoints: function(model, points) {
-      model.incrementProperty('score', points)
+      model.incrementProperty('score', points);
       model.save();
     },
     takePoints: function(model, points) {
-      model.incrementProperty('score', -1 * points)
+      model.incrementProperty('score', -1 * points);
       model.save();
     },
     destroyUser: function(model) {
