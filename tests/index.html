@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>App</title>
-    <meta name='description' content=''>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EmberCliEmberFire Tests</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel='stylesheet' href='/assets/app.css'>
-    <link rel="stylesheet" href='/assets/qunit.css'>
+    {{BASE_TAG}}
 
-    <script src='/assets/app.js'></script>
-
+    <link rel="stylesheet" href="assets/ember-cli-ember-fire.css">
+    <link rel="stylesheet" href="assets/qunit.css">
     <style>
       #ember-testing-container {
         position: absolute;
@@ -23,8 +22,8 @@
         overflow: auto;
         z-index: 9999;
         border: 1px solid #ccc;
-        }
-        #ember-testing {
+      }
+      #ember-testing {
         zoom: 50%;
       }
     </style>
@@ -32,6 +31,13 @@
   <body>
     <div id="qunit"></div>
     <div id="qunit-fixture"></div>
+
+    <script>
+      window.ENV = {{ENV}};
+    </script>
+    <script src="assets/qunit.js"></script>
+    <script src="assets/ember-cli-ember-fire.js"></script>
+    <script src="testem.js"></script>
     <script>
       require('ember-cli-ember-fire/tests/test-helper');
       require('ember-cli-ember-fire/tests/test-loader');
