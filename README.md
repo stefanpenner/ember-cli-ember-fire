@@ -17,7 +17,7 @@ The firebase.js script tag was added in the following spot:
 ## bower.json
 `"emberfire": "latest"` was added to the bower.json file at the end of the dependencies.
 
-```
+```js
 "dependencies": {
   .
   .
@@ -31,7 +31,7 @@ The firebase.js script tag was added in the following spot:
 ## Brocfile.js
 We added the import line for emberfire.js or it doesn't get included in the application js file.
 
-```
+```js
 // Use this to add additional libraries to the generated output files.
 app.import('vendor/ember-data/ember-data.js');
 app.import('vendor/emberfire/dist/emberfire.js');
@@ -40,10 +40,17 @@ app.import('vendor/emberfire/dist/emberfire.js');
 ## app/adapters/application.js
 Created the adapters folder and the application.js file under it containing:
 
-```
+```js
 export default DS.FirebaseAdapter.extend({
   firebase: new Firebase('https://<yourfirebaseinstance>.firebaseio.com')
 });
+```
+
+## app/serializers/application.js
+Created the serializers folder and the application.js file under it containing:
+
+```js
+export default DS.FirebaseSerializer.extend();
 ```
 
 ## Bootstrapping
