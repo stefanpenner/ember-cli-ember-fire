@@ -60,6 +60,11 @@ git clone https://github.com/stefanpenner/ember-cli-ember-fire.git
 cd ember-cli-ember-fire
 npm i
 bower i
+```
+
+Add your Firebase instance name to the appropriate `config/environments` file(s) and then:
+
+```sh
 ember server
 ```
 
