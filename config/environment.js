@@ -13,6 +13,7 @@ module.exports = function(environment) {
     },
 
     APP: {
+      firebase_instance: 'sweltering-fire-8953' // example: 'sweltering-fire-8953'
       // Here you can pass flags/options to your application instance
       // when it is created
     }

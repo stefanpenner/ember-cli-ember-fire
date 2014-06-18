@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 var sum = Ember.computed.sum;
 var mapBy = Ember.computed.mapBy;
 

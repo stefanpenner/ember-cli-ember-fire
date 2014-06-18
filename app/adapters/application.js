@@ -1,3 +1,5 @@
+import DS from 'ember-data';
+
 export default DS.FirebaseAdapter.extend({
-  firebase: new window.Firebase('https://' + (window.ENV.firebase_instance || 'sweltering-fire-8953') + '.firebaseio.com')
+  firebase: new window.Firebase('https://' + window.EmberCliEmberFireENV.APP.firebase_instance + '.firebaseio.com')
 });
