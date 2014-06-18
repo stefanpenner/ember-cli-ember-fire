@@ -9,16 +9,19 @@
 
     {{BASE_TAG}}
 
+    <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/ember-cli-ember-fire.css">
   </head>
   <body>
     <script>
-      window.ENV = {{ENV}};
+      window.EmberCliEmberFireENV = {{ENV}};
+      window.EmberENV = window.EmberCliEmberFireENV.EmberENV;
     </script>
     <script src="https://cdn.firebase.com/js/client/1.0.6/firebase.js"></script>
+    <script src="assets/vendor.js"></script>
     <script src="assets/ember-cli-ember-fire.js"></script>
     <script>
-      window.EmberCliEmberFire = require('ember-cli-ember-fire/app')['default'].create(ENV.APP);
+      window.EmberCliEmberFire = require('ember-cli-ember-fire/app')['default'].create(EmberCliEmberFireENV.APP);
     </script>
   </body>
 </html>

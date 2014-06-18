@@ -1,73 +1,25 @@
-ember-cli-ember-fire
-====================
+# Ember-cli-ember-fire
 
-The following files have been modified from a stock ember-cli application created via `ember new`:
+This README outlines the details of collaborating on this Ember application.
 
-## index.html
-The firebase.js script tag was added in the following spot:
+## Installation
 
-```
- <script>
-   window.ENV = {{ENV}};
- </script>
- <script src="https://cdn.firebase.com/js/client/1.0.6/firebase.js"></script>
- <script src="assets/<yourappname>.js"></script>
-```
+* `git clone` this repository
+* `npm install`
+* `bower install`
 
-## bower.json
-`"emberfire": "latest"` was added to the bower.json file at the end of the dependencies.
+## Running
 
-```js
-"dependencies": {
-  .
-  .
-  .
-  "ember-cli-shims": "stefanpenner/ember-cli-shims#0.0.1",
-  "ember-load-initializers": "stefanpenner/ember-load-initializers#0.0.1",
-  "emberfire": "latest"
-}
-```
+* `ember server`
+* Visit your app at http://localhost:4200.
 
-## Brocfile.js
-We added the import line for emberfire.js or it doesn't get included in the application js file.
+## Running Tests
 
-```js
-// Use this to add additional libraries to the generated output files.
-app.import('vendor/ember-data/ember-data.js');
-app.import('vendor/emberfire/dist/emberfire.js');
-```
+* `ember test`
+* `ember test --server`
 
-## app/adapters/application.js
-Created the adapters folder and the application.js file under it containing:
+## Building
 
-```js
-export default DS.FirebaseAdapter.extend({
-  firebase: new Firebase('https://<yourfirebaseinstance>.firebaseio.com')
-});
-```
+* `ember build`
 
-## app/serializers/application.js
-Created the serializers folder and the application.js file under it containing:
-
-```js
-export default DS.FirebaseSerializer.extend();
-```
-
-## Bootstrapping
-
-```sh
-git clone https://github.com/stefanpenner/ember-cli-ember-fire.git
-cd ember-cli-ember-fire
-npm i
-bower i
-```
-
-Add your Firebase instance name to the appropriate `config/environments` file(s) and then:
-
-```sh
-ember server
-```
-
-Now you can set up your models/routes/etc...
-
-Have fun.
+For more information on using ember-cli, visit [http://iamstef.net/ember-cli/](http://iamstef.net/ember-cli/).
