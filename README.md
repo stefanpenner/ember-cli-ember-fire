@@ -1,4 +1,4 @@
-# Ember-cli-ember-fire
+# Ember-cli-ember-fire [![Build Status](https://travis-ci.org/stefanpenner/ember-cli-ember-fire.svg)](https://travis-ci.org/stefanpenner/ember-cli-ember-fire)
 
 This README outlines the details of collaborating on this Ember application.
 
