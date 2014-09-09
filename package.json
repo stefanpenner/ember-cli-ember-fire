@@ -26,7 +26,7 @@
     "ember-cli-ic-ajax": "0.1.1",
     "ember-cli-inject-live-reload": "^1.0.2",
     "ember-cli-qunit": "0.1.0",
-    "emberfire": "stefanpenner/emberfire#ember-addon",
+    "emberfire": "git://github.com/firebase/emberfire#v1.2.1",
     "express": "^4.8.5",
     "glob": "^4.0.5"
   }
