@@ -1,6 +1,6 @@
 <div class="leaderboard">
   {{#each}}
-    <div {{bindAttr class=":player selected"}} {{action 'selectPlayer' this}}>
+    <div {{bind-attr class=":player selected"}} {{action 'selectPlayer' this}}>
       <span class="name">{{name}}</span>
       <span class="score">{{score}}</span>
     </div>
